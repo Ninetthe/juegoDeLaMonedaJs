@@ -1,0 +1,92 @@
+body {
+    margin: auto;
+    background-color:dimgrey;
+}
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 6rem;
+    width: 43rem; /*700px*/
+    height: 31rem; /*500`px*/
+    background-color: cornsilk;
+}
+.containerFirst {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(72, 65, 65);
+}
+.containerImg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+img {
+    position: relative;
+    margin: 32px auto;
+    border-radius: 50%;
+}
+.coinHead {
+    width: 100%;
+}
+.coinHead, .coinTail {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.coinTail {
+    width: 176px;
+    transform: rotateY(180deg);
+}
+
+
+@keyframes spin-coinTail {
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(1980deg);
+    }
+}
+.coinTail {
+    transform: rotateY(180deg);
+}
+@keyframes spin-coinHead {
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(2160deg);
+    }
+}
+
+.secundContainer {
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color:rgb(225, 189, 172);
+    border-color: blue;
+    border: 3px solid gray;
+}
+button {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(72, 65, 65);
+    font-weight: bold;
+}
+#spin {
+    margin-right: 20px;
+}
